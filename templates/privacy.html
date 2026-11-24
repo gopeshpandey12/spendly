@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-hero">
+    <div class="legal-hero-inner">
+        <div class="hero-badge">Legal</div>
+        <h1 class="legal-title">Privacy <em>Policy</em></h1>
+        <p class="legal-subtitle">What we collect, why we collect it, and how your financial data stays yours.</p>
+        <p class="legal-updated">Last updated: November 2026</p>
+    </div>
+</section>
+
+<section class="legal-body">
+    <div class="legal-container">
+
+        <div class="legal-card">
+            <p>
+                This Privacy Policy explains what information Spendly ("we", "us") collects,
+                how we use it, and the choices you have. By using Spendly you agree to the
+                practices described here.
+            </p>
+
+            <h2><span class="legal-num">01</span>Information We Collect</h2>
+            <ul>
+                <li><strong>Account information:</strong> your name, email address and a securely hashed version of your password.</li>
+                <li><strong>Expense data:</strong> the amounts, categories, dates and descriptions you enter.</li>
+                <li><strong>Technical data:</strong> basic information needed to keep you signed in, such as a session cookie.</li>
+            </ul>
+            <p>
+                We do not connect to your bank and never ask for card or account numbers.
+            </p>
+
+            <h2><span class="legal-num">02</span>How We Use Your Information</h2>
+            <p>We use your information only to:</p>
+            <ul>
+                <li>Create and secure your account.</li>
+                <li>Store your expenses and show you summaries and breakdowns of your spending.</li>
+                <li>Maintain and improve the reliability of the service.</li>
+            </ul>
+            <p>
+                We do not sell your data or use it for advertising.
+            </p>
+
+            <h2><span class="legal-num">03</span>Sharing of Information</h2>
+            <p>
+                Your expenses are private to your account. We do not share your personal
+                information with third parties, except where required by law.
+            </p>
+
+            <h2><span class="legal-num">04</span>Cookies</h2>
+            <p>
+                Spendly uses a session cookie to keep you signed in. We do not use tracking
+                or advertising cookies.
+            </p>
+
+            <h2><span class="legal-num">05</span>Data Security &amp; Retention</h2>
+            <p>
+                Passwords are stored hashed, never in plain text. We keep your data for as long
+                as your account exists. No method of storage is completely secure, so we cannot
+                guarantee absolute security.
+            </p>
+
+            <h2><span class="legal-num">06</span>Your Choices</h2>
+            <p>
+                You can view, edit or delete your expenses at any time and update your profile
+                details from your account.
+            </p>
+
+            <h2><span class="legal-num">07</span>Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. When we do, we will revise
+                the "Last updated" date above. Continuing to use Spendly after changes take
+                effect means you accept the revised policy.
+            </p>
+        </div>
+
+        <div class="legal-actions">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">&larr; Back to home</a>
+            <a href="{{ url_for('terms') }}" class="btn-primary">Read the Terms &amp; Conditions</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
